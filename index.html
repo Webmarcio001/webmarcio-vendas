@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Webmarcio Soluções | Criação de Sites</title>
+
+  <meta name="description" content="Criação de sites profissionais para comércios e pequenas empresas. Conheça a Webmarcio Soluções.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container menu">
+      <a href="#inicio" class="logo">Webmarcio<span> Soluções</span></a>
+
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#planos">Preços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <p class="destaque">TECNOLOGIA PARA SEU NEGÓCIO</p>
+
+        <h1>Seu negócio merece um site profissional!</h1>
+
+        <p>
+          Criamos sites modernos, rápidos e adaptados
+          para celulares. Apresente seus produtos,
+          divulgue seus serviços e conquiste clientes.
+        </p>
+
+        <a href="#planos" class="botao">Conheça nossos planos</a>
+        <a href="#contato" class="botao botao-claro">Solicitar orçamento</a>
+      </div>
+    </section>
+
+    <section class="secao" id="servicos">
+      <div class="container">
+        <h2>Nossos serviços</h2>
+        <p class="subtitulo">
+          Soluções digitais para sua empresa crescer.
+        </p>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="icone">🌐</div>
+            <h3>Sites comerciais</h3>
+            <p>
+              Sites profissionais para empresas,
+              lojas e profissionais autônomos.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icone">🛒</div>
+            <h3>Lojas virtuais</h3>
+            <p>
+              Catálogos digitais para divulgar
+              produtos e receber pedidos.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icone">📱</div>
+            <h3>Sites responsivos</h3>
+            <p>
+              Páginas adaptadas para computadores,
+              tablets e celulares.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icone">💬</div>
+            <h3>WhatsApp comercial</h3>
+            <p>
+              Integração para facilitar o contato
+              entre sua empresa e seus clientes.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="secao planos" id="planos">
+      <div class="container">
+        <h2>Conheça nossos planos</h2>
+        <p class="subtitulo">
+          Escolha a solução ideal para sua empresa.
+        </p>
+
+        <div class="cards">
+
+          <article class="card plano">
+            <h3>Site Essencial</h3>
+            <p class="preco">R$ 399</p>
+            <p>Para começar sua presença na internet.</p>
+            <ul>
+              <li>Uma página comercial</li>
+              <li>Apresentação da empresa</li>
+              <li>Serviços e contatos</li>
+              <li>Botão WhatsApp</li>
+              <li>Layout para celular</li>
+            </ul>
+            <button onclick="pedirPlano('Site Essencial - R$ 399')">
+              Solicitar este plano
+            </button>
+          </article>
+
+          <article class="card plano recomendado">
+            <span class="etiqueta">Mais completo</span>
+            <h3>Site Profissional</h3>
+            <p class="preco">R$ 699</p>
+            <p>Para empresas que querem crescer.</p>
+            <ul>
+              <li>Até 5 páginas</li>
+              <li>Galeria de fotos</li>
+              <li>Serviços e produtos</li>
+              <li>Formulário de contato</li>
+              <li>Integração com WhatsApp</li>
+            </ul>
+            <button onclick="pedirPlano('Site Profissional - R$ 699')">
+              Solicitar este plano
+            </button>
+          </article>
+
+          <article class="card plano">
+            <h3>Site Comercial Plus</h3>
+            <p class="preco">R$ 999</p>
+            <p>Para negócios com mais necessidades.</p>
+            <ul>
+              <li>Até 8 páginas</li>
+              <li>Catálogo de produtos</li>
+              <li>Galeria de imagens</li>
+              <li>Formulário de orçamento</li>
+              <li>Recursos adicionais</li>
+            </ul>
+            <button onclick="pedirPlano('Site Comercial Plus - R$ 999')">
+              Solicitar este plano
+            </button>
+          </article>
+
+        </div>
+        <p class="observacao">
+          Valores iniciais. Domínio, hospedagem e recursos
+          adicionais serão orçados separadamente.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao sobre">
+      <div class="container">
+        <h2>Por que escolher a Webmarcio?</h2>
+        <p>
+          Desenvolvemos soluções digitais modernas e fáceis
+          de usar para empresas que querem melhorar sua
+          presença na internet.
+        </p>
+        <div class="vantagens">
+          <span>✓ Atendimento personalizado</span>
+          <span>✓ Sites adaptados para celulares</span>
+          <span>✓ Design moderno</span>
+          <span>✓ Contato direto com o cliente</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato secao" id="contato">
+      <div class="container">
+        <h2>Solicite seu orçamento</h2>
+        <p>
+          Conte um pouco sobre sua empresa.
+          Nossa equipe poderá conversar com você pelo WhatsApp.
+        </p>
+
+        <form id="formulario">
+          <input type="text" id="nome"
+            placeholder="Seu nome" required>
+
+          <input type="text" id="empresa"
+            placeholder="Nome da empresa" required>
+
+          <select id="servico" required>
+            <option value="">Escolha o serviço</option>
+            <option>Site Essencial</option>
+            <option>Site Profissional</option>
+            <option>Site Comercial Plus</option>
+            <option>Outro serviço</option>
+          </select>
+
+          <textarea id="mensagem"
+            placeholder="Descreva o que você precisa"
+            rows="4"></textarea>
+
+          <button type="submit">Enviar pedido pelo WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <h3>Webmarcio Soluções</h3>
+      <p>Sistemas inteligentes para seu negócio crescer.</p>
+      <p>Site: webmarcio.com.br</p>
+      <p>© 2026 Webmarcio Soluções - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
